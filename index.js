@@ -5,7 +5,7 @@ const User = require("./models/User")
 const app = express()
 app.use(express.json({ extended: true }))
 app.use(express.urlencoded())
-const port = 3000
+const port = process.env.PORT || 3000
 
 mongoose.connect(
   "mongodb+srv://sheth_samarth:drys6048@cluster0.bntqw2u.mongodb.net/?retryWrites=true&w=majority",
